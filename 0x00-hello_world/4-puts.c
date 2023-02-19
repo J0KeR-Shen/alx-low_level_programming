@@ -1,7 +1,8 @@
 #!/bin/bash
+gcc #CFILE 
 #include <stdio.h>
 
 int main() {
-    printf("Programming is like building a multilingual puzzle\n");
+    puts("Programming is like building a multilingual puzzle\n");
     return 0;
 }
