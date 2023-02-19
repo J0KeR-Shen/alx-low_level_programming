@@ -1,5 +1,3 @@
-#!/bin/bash
-gcc #CFILE 
 #include <stdio.h>
 
 int main() {
