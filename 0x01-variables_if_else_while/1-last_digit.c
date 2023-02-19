@@ -1,20 +1,30 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - program that prints the alphabet in lowercase, followed by a new line
- * You can only use the putchar
- * Return: 0
+ * main -Entry
+ * Return: Always 0
  */
-
 int main(void)
 {
-int l = 'a';
-while (l <= 'z')
-{
-putchar(l);
-l += 1;
-}
-putchar('\n');
-return (0);
+	int n;
+	int a;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	a = n % 10;
+	if (a > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, a);
+	}
+	else if (a == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, a);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
+	}
+	return (0);
 }
