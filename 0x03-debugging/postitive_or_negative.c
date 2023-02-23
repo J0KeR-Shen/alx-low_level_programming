@@ -1,14 +1,35 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+
 /**
-* main - tests function that prints if integer is positive or negative
-* Return: 0
-*/
+ * positive_or_negative - tests number sign
+ * @i: the number
+ * Description: prints number sign
+ * Return: 0
+ */
 
-int main(void)
+void positive_or_negative(int i);
+
+/**
+ * positive_or_negative - tests sign
+ * @i: the number to test
+ * Description: Tests whether n is +, - or zero
+ * Return: 0
+ */
+
+void positive_or_negative(int i)
 {
-int i;
-
-i = 98;
-positive_or_negative(i);
-
-return (0);
+	if (i > 0)
+	{
+		printf("%d is positive\n", i);
+	}
+	else if (i == 0)
+	{
+		printf("%d is zero\n", i);
+	}
+	else
+	{
+		printf("%d is negative\n", i);
+	}
 }
